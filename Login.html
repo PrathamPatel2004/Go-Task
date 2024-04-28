@@ -3,20 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <style>
-    </style>
+    <title>My Website</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-		<table height=100% width=100% align=center>
-			<tr>
-				<th><form>
-					Name<input type="text"><br>
-					Email<input type="Email"><br>
-					Password<input type="password"><br>
-					<input type="Submit" value="Submit">
-					<input type="Reset" value="Reset">
-				</form></th>
-			</tr>
-	</body>
+
+    <?php include 'Home.php'; ?>
+
+<header id="header"><a href="/HOME1.html" ><img src="logo-no-background.png" alt="Go-Task.com" id="Logo"></a></header>
+<nav>       
+    <a href="/Home.html">Home</a>
+    <a href="Calender1.html">Calendar</a>
+    <a href="Categories.html">Categories</a>
+    <a href="Login.html">Login</a>
+    <a href="sign-up.html">Sign Up</a>
+</nav>
+
+<div class="container3">
+    <h2>Login</h2>
+    <form action="login.php" method="get">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group" id="buttons">
+            <input type="submit" value="Login">
+            <a href="forget-password.html">Forget Password</a>
+        </div>
+
+        <div class="sign-up">
+            <p>Don't have an account? <a href="sign-up.html">Sign Up</a></p>
+        </div>
+    </form>
+</div>
+
+
+<footer>
+    <p>&copy; 2024 Go-Task Web Develoment Project.</p>
+    
+    <div class="ref"><ul>
+      <li><a href="https://www.flaticon.com/">Flaticon.com</a></li>
+      <li><a href="https://logo.com">Logo.com</a></li>
+      </ul>
+    </div>
+</footer>
+
+</body>
 </html>
